@@ -1,0 +1,307 @@
+2020-01-03 11:14:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRICECHECKER" nicht gefunden
+Schema "PRICECHECKER" not found; SQL statement:
+SELECT ID, FATHER, NAME FROM PRICECHECKER.CATEGORY [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1940)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2827)
+	at org.h2.command.Parser.parseSelect(Parser.java:2959)
+	at org.h2.command.Parser.parseQuerySub(Parser.java:2817)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2649)
+	at org.h2.command.Parser.parseQuery(Parser.java:2620)
+	at org.h2.command.Parser.parsePrepared(Parser.java:868)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:78)
+	at net.sm.pricechecker.database.H2DatabaseEngine.executeQuery(H2DBMS.java:129)
+	at net.sm.pricechecker.database.DatabaseH2.getAllCategory(DatabaseH2.java:30)
+	at net.sm.pricechecker.views.PriceCheckerView.refreshCategory(PriceCheckerView.java:432)
+	at net.sm.pricechecker.views.PriceCheckerView.initView(PriceCheckerView.java:148)
+	at net.sm.pricechecker.PriceChecker.startPriceCheckerView(PriceChecker.java:76)
+	at net.sm.pricechecker.PriceChecker.start(PriceChecker.java:51)
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:863)
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$7(PlatformImpl.java:326)
+	at com.sun.javafx.application.PlatformImpl.lambda$null$5(PlatformImpl.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$6(PlatformImpl.java:294)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$3(WinApplication.java:177)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-03 11:16:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "PRICECHECKER" nicht gefunden
+Schema "PRICECHECKER" not found; SQL statement:
+SELECT ID, FATHER, NAME FROM PRICECHECKER.CATEGORY [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1940)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2827)
+	at org.h2.command.Parser.parseSelect(Parser.java:2959)
+	at org.h2.command.Parser.parseQuerySub(Parser.java:2817)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2649)
+	at org.h2.command.Parser.parseQuery(Parser.java:2620)
+	at org.h2.command.Parser.parsePrepared(Parser.java:868)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:78)
+	at net.sm.pricechecker.database.H2DatabaseEngine.executeQuery(H2DBMS.java:129)
+	at net.sm.pricechecker.database.DatabaseH2.getAllCategory(DatabaseH2.java:30)
+	at net.sm.pricechecker.views.PriceCheckerView.refreshCategory(PriceCheckerView.java:432)
+	at net.sm.pricechecker.views.PriceCheckerView.initView(PriceCheckerView.java:148)
+	at net.sm.pricechecker.PriceChecker.startPriceCheckerView(PriceChecker.java:77)
+	at net.sm.pricechecker.PriceChecker.start(PriceChecker.java:52)
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:863)
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$7(PlatformImpl.java:326)
+	at com.sun.javafx.application.PlatformImpl.lambda$null$5(PlatformImpl.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$6(PlatformImpl.java:294)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$3(WinApplication.java:177)
+	at java.lang.Thread.run(Thread.java:748)
+2020-01-03 11:17:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "CREATE TABLE PRICECHECKER.CHECK[*] (
+     ID IDENTITY PRIMARY KEY,
+	 IDPRODUCT INT NOT NULL,
+	 CHECKTIME DATETIME NOT NULL,
+	 STATUS INT NOT NULL,
+	 PRICE DECIMAL(5,2) NOT NULL
+)"; erwartet "identifier"
+Syntax error in SQL statement "CREATE TABLE PRICECHECKER.CHECK[*] (
+     ID IDENTITY PRIMARY KEY,
+	 IDPRODUCT INT NOT NULL,
+	 CHECKTIME DATETIME NOT NULL,
+	 STATUS INT NOT NULL,
+	 PRICE DECIMAL(5,2) NOT NULL
+)"; expected "identifier"; SQL statement:
+CREATE TABLE PRICECHECKER.CHECK (
+     ID IDENTITY PRIMARY KEY,
+	 IDPRODUCT INT NOT NULL,
+	 CHECKTIME DATETIME NOT NULL,
+	 STATUS INT NOT NULL,
+	 PRICE DECIMAL(5,2) NOT NULL
+) [42001-199]
+2020-01-03 11:17:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "CREATE TABLE PRICECHECKER.CHECK[*] (
+     ID IDENTITY PRIMARY KEY,
+	 IDPRODUCT INT NOT NULL,
+	 CHECKTIME DATETIME NOT NULL,
+	 STATUS INT NOT NULL,
+	 PRICE DECIMAL(5,2) NOT NULL
+)"; erwartet "identifier"
+Syntax error in SQL statement "CREATE TABLE PRICECHECKER.CHECK[*] (
+     ID IDENTITY PRIMARY KEY,
+	 IDPRODUCT INT NOT NULL,
+	 CHECKTIME DATETIME NOT NULL,
+	 STATUS INT NOT NULL,
+	 PRICE DECIMAL(5,2) NOT NULL
+)"; expected "identifier"; SQL statement:
+CREATE TABLE PRICECHECKER.CHECK (
+     ID IDENTITY PRIMARY KEY,
+	 IDPRODUCT INT NOT NULL,
+	 CHECKTIME DATETIME NOT NULL,
+	 STATUS INT NOT NULL,
+	 PRICE DECIMAL(5,2) NOT NULL
+) [42001-199]
+2020-01-03 11:19:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "CREATE TABLE PRICECHECKER.CHECK[*] (
+ID IDENTITY PRIMARY KEY,
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+)"; erwartet "identifier"
+Syntax error in SQL statement "CREATE TABLE PRICECHECKER.CHECK[*] (
+ID IDENTITY PRIMARY KEY,
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+)"; expected "identifier"; SQL statement:
+CREATE TABLE PRICECHECKER.CHECK (
+ID IDENTITY PRIMARY KEY,
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+) [42001-199]
+2020-01-03 11:21:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "CREATE TABLE PRICECHECKER.CHECK[*] (
+ID IDENTITY PRIMARY KEY(ID),
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+)"; erwartet "identifier"
+Syntax error in SQL statement "CREATE TABLE PRICECHECKER.CHECK[*] (
+ID IDENTITY PRIMARY KEY(ID),
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+)"; expected "identifier"; SQL statement:
+CREATE TABLE PRICECHECKER.CHECK (
+ID IDENTITY PRIMARY KEY(ID),
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+) [42001-199]
+2020-01-03 11:21:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "CREATE TABLE PRICECHECKER.CHECK[*] (
+ID IDENTITY,
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+)"; erwartet "identifier"
+Syntax error in SQL statement "CREATE TABLE PRICECHECKER.CHECK[*] (
+ID IDENTITY,
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+)"; expected "identifier"; SQL statement:
+CREATE TABLE PRICECHECKER.CHECK (
+ID IDENTITY,
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+) [42001-199]
+2020-01-03 11:21:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "CREATE TABLE PRICECHECKER.CHECK[*] (
+ID IDENTITY PRIMARY KEY,
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+)"; erwartet "identifier"
+Syntax error in SQL statement "CREATE TABLE PRICECHECKER.CHECK[*] (
+ID IDENTITY PRIMARY KEY,
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+)"; expected "identifier"; SQL statement:
+CREATE TABLE PRICECHECKER.CHECK (
+ID IDENTITY PRIMARY KEY,
+IDPRODUCT INT NOT NULL,
+CHECKTIME DATETIME NOT NULL,
+STATUS INT NOT NULL,
+PRICE DECIMAL(5,2) NOT NULL
+) [42001-199]
+2020-01-08 16:12:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "INSERT INTO PRICECHECKER.CHECK[*] (IDPRODUCT, CHECKTIME, STATUS, PRICE) VALUES (1, '2020-01-08T16:12:42.734', 12, '27.90');"; erwartet "identifier"
+Syntax error in SQL statement "INSERT INTO PRICECHECKER.CHECK[*] (IDPRODUCT, CHECKTIME, STATUS, PRICE) VALUES (1, '2020-01-08T16:12:42.734', 12, '27.90');"; expected "identifier"; SQL statement:
+INSERT INTO PRICECHECKER.CHECK (IDPRODUCT, CHECKTIME, STATUS, PRICE) VALUES (1, '2020-01-08T16:12:42.734', 12, '27.90'); [42001-200]
+2020-01-08 16:12:42 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "SELECT TOP 1 ID, IDPRODUCT, CHECKTIME, STATUS, PRICE FROM PRICECHECKER.CHECK[*] WHERE IDPRODUCT=1 ORDER BY CHECKTIME DESC"; erwartet "identifier"
+Syntax error in SQL statement "SELECT TOP 1 ID, IDPRODUCT, CHECKTIME, STATUS, PRICE FROM PRICECHECKER.CHECK[*] WHERE IDPRODUCT=1 ORDER BY CHECKTIME DESC"; expected "identifier"; SQL statement:
+SELECT TOP 1 ID, IDPRODUCT, CHECKTIME, STATUS, PRICE FROM PRICECHECKER.CHECK WHERE IDPRODUCT=1 ORDER BY CHECKTIME DESC [42001-200]
+2020-02-05 13:14:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Mehrdeutiger Feldname "ID"
+Ambiguous column name "ID"; SQL statement:
+SELECT ID,NAME, FATHER FROM PRICECHECKER.CATEGORY T1 JOIN PRICECHECKER.CATEGORY T2 ON T1.FATHER = T2.ID [90059-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.mapColumn(ExpressionColumn.java:142)
+	at org.h2.expression.ExpressionColumn.mapColumns(ExpressionColumn.java:116)
+	at org.h2.command.dml.Select.mapColumns(Select.java:1629)
+	at org.h2.command.dml.Select.init(Select.java:1164)
+	at org.h2.command.Parser.parseSelect(Parser.java:2447)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:788)
+	at org.h2.command.Parser.parse(Parser.java:760)
+	at org.h2.command.Parser.prepareCommand(Parser.java:683)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.engine.Session.prepareCommand(Session.java:565)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:1113)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1436)
+	at org.h2.server.web.WebApp.query(WebApp.java:1111)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1073)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1060)
+	at org.h2.server.web.WebThread.process(WebThread.java:173)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.lang.Thread.run(Unknown Source)
+2020-02-07 10:03:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Methode nur zulässig für eine Abfrage. Erlaubt sind execute oder executeUpdate, nicht jedoch executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+ [90002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.Prepared.query(Prepared.java:231)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:285)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:85)
+	at net.sm.core.database.DBMS.executeQuery(DBMS.java:58)
+	at net.sm.pricechecker.database.DatabaseH2.getAllProductByCategory(DatabaseH2.java:163)
+	at net.sm.pricechecker.task.product.GetProductByCategory.start(GetProductByCategory.java:30)
+	at net.sm.core.task.TaskManager$1.call(TaskManager.java:45)
+	at net.sm.core.task.TaskManager$1.call(TaskManager.java:16)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:748)
+2020-02-07 10:05:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Methode nur zulässig für eine Abfrage. Erlaubt sind execute oder executeUpdate, nicht jedoch executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+ [90002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.Prepared.query(Prepared.java:231)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:285)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:85)
+	at net.sm.core.database.DBMS.executeQuery(DBMS.java:58)
+	at net.sm.pricechecker.database.DatabaseH2.getAllProductByCategory(DatabaseH2.java:165)
+	at net.sm.pricechecker.task.product.GetProductByCategory.start(GetProductByCategory.java:30)
+	at net.sm.core.task.TaskManager$1.call(TaskManager.java:45)
+	at net.sm.core.task.TaskManager$1.call(TaskManager.java:16)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:748)
+2020-02-07 10:08:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Methode nur zulässig für eine Abfrage. Erlaubt sind execute oder executeUpdate, nicht jedoch executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+ [90002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.Prepared.query(Prepared.java:231)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:285)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:85)
+	at net.sm.core.database.DBMS.executeQuery(DBMS.java:58)
+	at net.sm.pricechecker.database.DatabaseH2.getAllProductByCategory(DatabaseH2.java:165)
+	at net.sm.pricechecker.task.product.GetProductByCategory.start(GetProductByCategory.java:30)
+	at net.sm.core.task.TaskManager$1.call(TaskManager.java:45)
+	at net.sm.core.task.TaskManager$1.call(TaskManager.java:16)
+	at javafx.concurrent.Task$TaskCallable.call(Task.java:1423)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.lang.Thread.run(Thread.java:748)
